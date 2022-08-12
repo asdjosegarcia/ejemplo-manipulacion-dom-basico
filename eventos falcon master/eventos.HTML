@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <a id="boton" href="https://www.youtube.com/watch?v=1oahTaVIQvk">SHUTU :D</a>
+    <!-- <button id="boton">Boton :D</button> -->
+    <input type="text" id="input">
+    <script>
+        (function (){
+            var saludo= function(e){
+                console.log('este evento es de tipo: '+ e.type)//e.type dice que tipo de envento es
+                console.log('ho yeah');
+                e.preventDefault();//reviene que se ejecute el ancore <a>
+            }
+            var input=document.getElementById('boton');
+            boton.addEventListener('click',saludo);
+            /* boton.removeEventListener('click',saludo); *///borra la funcion saludo 1 y solo sale saludo2
+            }())
+    </script>
+</body>
+</html>
